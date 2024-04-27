@@ -25,6 +25,7 @@ def perform_ocr_on_image(img, coordinates):
     for res in results:
         if len(results) == 1 or (len(res[1]) > 6 and res[2] > 0.2):
             text = res[1]
+    print(text)        
 
     return str(text)
 
